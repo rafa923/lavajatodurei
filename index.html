@@ -3,139 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lava Jato do Rei | O Padrão Ouro de Sobradinho</title>
+    <title>Lava Jato do Rei | Tradição na Quadra 14</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;900&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; scroll-behavior: smooth; }
-        .font-king { font-family: 'Cinzel', serif; }
-        
-        .gold-gradient {
-            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 45%, #b38728 70%, #aa771c 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .bg-gold {
-            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 45%, #b38728 70%, #aa771c 100%);
-        }
-
-        .card-glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(191, 149, 63, 0.2);
-            transition: all 0.4s ease;
-        }
-
-        .card-glass:hover {
-            border: 1px solid rgba(191, 149, 63, 0.6);
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(191, 149, 63, 0.1);
-        }
-
-        .parallax {
-            background-image: url('https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?q=80&w=2000');
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-        }
+        .gold-gradient { background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-gold { background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c); }
+        .insta-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
     </style>
 </head>
-<body>
+<body class="bg-black">
 
-    <nav class="fixed w-full z-50 p-6 flex justify-between items-center bg-black/80 backdrop-blur-lg border-b border-white/10">
-        <div class="font-king text-2xl tracking-[4px] gold-gradient uppercase">Lava Jato do Rei</div>
-        <a href="https://wa.me/5561981704587" class="bg-gold text-black px-6 py-2 font-black text-xs uppercase tracking-widest rounded-sm hover:scale-105 transition">Agendar</a>
+    <nav class="p-5 flex justify-between items-center border-b border-zinc-900 sticky top-0 bg-black/90 backdrop-blur-md z-50">
+        <div class="font-black italic text-xl uppercase">👑 LAVA JATO <span class="gold-gradient">DO REI</span></div>
+        <a href="https://wa.me/5561981704587" class="bg-gold text-black px-4 py-2 rounded-full font-bold text-[10px] uppercase">Falar com o Rei</a>
     </nav>
 
-    <section class="h-screen flex items-center justify-center text-center px-6 parallax">
-        <div class="bg-black/60 absolute inset-0"></div>
-        <div class="relative z-10 max-w-5xl">
-            <h2 class="text-gold uppercase tracking-[10px] text-sm font-bold mb-4 gold-gradient">Desde o início na Quadra 14</h2>
-            <h1 class="text-6xl md:text-9xl font-black uppercase leading-none mb-8 italic tracking-tighter">
-                O Brilho <br> <span class="gold-gradient italic">De Um Rei</span>
-            </h1>
-            <p class="text-gray-300 text-xl md:text-2xl max-w-2xl mx-auto font-light italic mb-10">
-                Mais que um lava jato, uma trajetória de cuidado, perfeição e resultados impecáveis atrás do Sobradinho Shopping.
+    <header class="py-20 px-6 text-center">
+        <p class="text-yellow-600 font-bold uppercase tracking-[3px] text-xs mb-4">Desde o início na Quadra 14</p>
+        <h1 class="text-5xl md:text-8xl font-black uppercase italic leading-tight mb-8">O BRILHO DA <br><span class="gold-gradient">REALEZA</span></h1>
+    </header>
+
+    <section class="py-16 px-6 max-w-4xl mx-auto border-t border-zinc-900">
+        <h2 class="text-2xl font-black gold-gradient uppercase mb-10 italic text-center">Nossa História & Trajetória</h2>
+        <div class="space-y-6 text-zinc-400 leading-relaxed text-lg italic">
+            <p>
+                Os lava-jatos surgiram no início do século XX como simples pontos de lavagem manual. Com o tempo, o que era apenas água e sabão evoluiu para a <strong>Estética Automotiva</strong>. Entendendo essa evolução, o <span class="text-white font-bold">Lava Jato do Rei</span> nasceu com a missão de trazer o tratamento de luxo para o dia a dia.
             </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="https://wa.me/5561981704587" class="bg-gold text-black font-black py-5 px-12 text-xl uppercase italic hover:shadow-[0_0_50px_rgba(191,149,63,0.4)] transition">Falar com o Rei</a>
-                <a href="#historia" class="border border-white/20 hover:bg-white/10 text-white font-black py-5 px-12 text-xl uppercase italic transition">Nossa História</a>
-            </div>
+            <p>
+                Nossa história na <span class="text-yellow-500 font-bold uppercase">Quadra 14 de Sobradinho</span> começou com um objetivo claro: ser o refúgio dos motoristas mais exigentes. Localizados estrategicamente atrás do Sobradinho Shopping, nos tornamos referência em cuidado detalhado, onde cada veículo é tratado como uma peça única de coleção.
+            </p>
+            <p>
+                Desde que abrimos as portas na Quadra 14, mantemos o mesmo padrão: produtos de alta performance e o toque artesanal que só quem ama o que faz consegue entregar.
+            </p>
         </div>
     </section>
 
-    <section id="resultados" class="py-32 px-6 bg-black">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="font-king text-4xl gold-gradient uppercase tracking-widest mb-4">Resultados Absolutos</h2>
-                <p class="text-zinc-500 uppercase tracking-[4px] text-xs">A prova da nossa excelência</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 items-center bg-zinc-950 p-8 md:p-16 rounded-3xl border border-zinc-900">
-                <div>
-                    <i class="fa-solid fa-crown text-5xl text-yellow-600 mb-6"></i>
-                    <h3 class="text-4xl font-black mb-6 leading-tight italic">NÃO ENTREGAMOS APENAS CARROS LIMPOS, <span class="text-yellow-600">RENOVAMOS O SEU ORGULHO.</span></h3>
-                    <p class="text-zinc-400 text-xl leading-relaxed italic mb-8">
-                        "Cada reflexo na lataria é o resultado de anos de técnica e dedicação. Na Quadra 14, não existe 'bom o suficiente'. Só existe o perfeito."
-                    </p>
-                    <div class="flex gap-4">
-                        <div class="text-center bg-zinc-900 p-4 rounded-lg w-full">
-                            <span class="block text-2xl font-black gold-gradient">100%</span>
-                            <span class="text-[10px] text-zinc-500 uppercase font-bold">Qualidade</span>
-                        </div>
-                        <div class="text-center bg-zinc-900 p-4 rounded-lg w-full">
-                            <span class="block text-2xl font-black gold-gradient">Satisfeito</span>
-                            <span class="text-[10px] text-zinc-500 uppercase font-bold">Ou Refazemos</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=400" class="rounded-xl grayscale hover:grayscale-0 transition duration-500">
-                    <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?q=80&w=400" class="rounded-xl grayscale hover:grayscale-0 transition duration-500 mt-8">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="historia" class="py-32 px-6 bg-zinc-950">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="font-king text-3xl mb-16 text-center gold-gradient uppercase tracking-widest italic">A Jornada do Rei</h2>
+    <section class="py-20 px-6 bg-zinc-950 text-center">
+        <div class="max-w-2xl mx-auto border border-zinc-800 p-8 md:p-12 rounded-[40px]">
+            <h2 class="text-3xl font-black uppercase mb-2">RESULTADOS <span class="gold-gradient italic">REAIS</span></h2>
+            <p class="text-zinc-500 text-sm uppercase tracking-widest mb-10">Acompanhe nosso padrão de entrega no Instagram</p>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="card-glass p-8 rounded-2xl">
-                    <span class="text-6xl font-black opacity-10 absolute right-4 top-4">01</span>
-                    <h4 class="text-yellow-600 font-bold uppercase mb-4">A Fundação</h4>
-                    <p class="text-zinc-400 text-sm leading-relaxed">Nascemos em Sobradinho com uma missão clara: elevar o nível da lavagem automotiva na região. O começo humilde moldou nossa atenção aos detalhes.</p>
-                </div>
-                <div class="card-glass p-8 rounded-2xl">
-                    <span class="text-6xl font-black opacity-10 absolute right-4 top-4">02</span>
-                    <h4 class="text-yellow-600 font-bold uppercase mb-4">A Quadra 14</h4>
-                    <p class="text-zinc-400 text-sm leading-relaxed">Atrás do Shopping, construímos mais que um negócio; construímos amizades e uma base de clientes que não abre mão da nossa confiança.</p>
-                </div>
-                <div class="card-glass p-8 rounded-2xl">
-                    <span class="text-6xl font-black opacity-10 absolute right-4 top-4">03</span>
-                    <h4 class="text-yellow-600 font-bold uppercase mb-4">O Futuro</h4>
-                    <p class="text-zinc-400 text-sm leading-relaxed">Hoje somos referência. Investimos em produtos premium e técnicas que preservam o valor do seu veículo por muito mais tempo.</p>
-                </div>
+            <div class="mb-10">
+                <i class="fa-brands fa-instagram text-6xl text-white mb-6"></i>
+                <p class="text-zinc-300 italic mb-8">"Veja o antes e depois, os detalhes da limpeza técnica e o brilho final que entregamos diariamente na Quadra 14."</p>
             </div>
+
+            <a href="https://www.instagram.com/lavajatodurei/" target="_blank" class="insta-btn text-white px-10 py-5 rounded-2xl font-black uppercase tracking-tighter hover:scale-105 transition shadow-2xl inline-block">
+                Ver Resultados no Instagram
+            </a>
         </div>
     </section>
 
-    <footer class="py-20 text-center bg-black border-t border-zinc-900">
-        <h2 class="font-king text-2xl gold-gradient mb-8">Lava Jato do Rei</h2>
-        <p class="text-zinc-600 text-xs uppercase tracking-[5px] mb-12">Quadra 14 - Sobradinho DF</p>
-        <div class="flex justify-center gap-8 mb-12 text-zinc-500">
-            <i class="fa-solid fa-shield-halved text-2xl hover:text-yellow-600 transition"></i>
-            <i class="fa-solid fa-car-burst text-2xl hover:text-yellow-600 transition"></i>
-            <i class="fa-solid fa-gem text-2xl hover:text-yellow-600 transition"></i>
-        </div>
-        <a href="https://wa.me/5561981704587" class="bg-gold text-black font-black py-4 px-12 rounded-full uppercase tracking-tighter hover:scale-110 transition inline-block">Agendar via WhatsApp</a>
+    <footer class="py-16 text-center opacity-50">
+        <p class="text-xs font-bold uppercase tracking-[10px]">Sobradinho DF | Quadra 14</p>
     </footer>
 
-    <a href="https://wa.me/5561981704587" class="fixed bottom-10 right-10 bg-green-600 p-5 rounded-full shadow-[0_0_40px_rgba(22,163,74,0.4)] hover:scale-110 transition z-50">
+    <a href="https://wa.me/5561981704587" class="fixed bottom-8 right-8 bg-green-600 p-5 rounded-full shadow-2xl hover:scale-110 transition z-50">
         <i class="fa-brands fa-whatsapp text-4xl text-white"></i>
     </a>
 
