@@ -3,86 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lava Jato do Rei | Especialistas</title>
+    <title>Lava Jato do Rei | A História</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
         .gold-text { color: #bf953f; }
         .gold-bg { background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c); }
-        .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
+        
+        /* Efeito Preto e Branco para Colorido */
+        .bw-photo {
+            filter: grayscale(100%);
+            transition: all 0.6s ease;
+            cursor: pointer;
         }
-        .service-card { border: 1px solid #bf953f44; transition: all 0.3s ease; }
-        .service-card:hover { border-color: #bf953f; transform: translateY(-5px); }
+        .bw-photo:hover {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body class="bg-black">
 
-    <header class="hero-bg min-h-screen flex flex-col items-center justify-center text-center px-6">
-        <h1 class="text-6xl md:text-9xl font-black uppercase italic mb-4 leading-tight">
-            <span class="gold-text">BRILHO DO REI</span>
-        </h1>
-        <p class="text-2xl md:text-3xl font-bold italic mb-8 uppercase tracking-widest">
-            Aqui seu carro sai <span class="gold-text">LIMPO</span> e você sai um REI!
-        </p>
-        <a href="https://wa.me/5561981704587" class="gold-bg text-black px-10 py-5 rounded-full font-black uppercase text-xl shadow-[0_0_30px_rgba(191,149,63,0.5)] hover:scale-105 transition">
-            <i class="fa-brands fa-whatsapp mr-2"></i> FALAR COM O REI
-        </a>
+    <nav class="p-6 border-b border-zinc-900 flex justify-between items-center bg-black/95 sticky top-0 z-50">
+        <div class="font-black italic text-xl uppercase tracking-tighter">👑 LAVA JATO <span class="gold-text">DO REI</span></div>
+        <a href="https://wa.me/5561981704587" class="gold-bg text-black px-6 py-2 rounded-full font-black uppercase text-xs">Falar com o Rei</a>
+    </nav>
+
+    <header class="py-20 px-6 text-center bg-zinc-950">
+        <h1 class="text-5xl md:text-8xl font-black uppercase italic mb-4 leading-tight">BRILHO <span class="gold-text">DO REI</span></h1>
+        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold">Aqui seu carro sai LIMPO e você sai um REI!</p>
     </header>
 
-    <section id="servicos" class="py-24 px-6 max-w-6xl mx-auto">
-        <h2 class="text-4xl font-black uppercase text-center mb-16 italic gold-text">Nossos Tratamentos Reais</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+        <p class="text-center text-zinc-500 mb-10 uppercase tracking-widest text-xs italic font-bold">(Passe o mouse ou toque nas fotos para ver o brilho real)</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800&q=80" class="bw-photo rounded-2xl border border-zinc-800 h-80 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1605610849440-e4a5e1e3b82d?auto=format&fit=crop&w=800&q=80" class="bw-photo rounded-2xl border border-zinc-800 h-80 w-full object-cover">
+            <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=800&q=80" class="bw-photo rounded-2xl border border-zinc-800 h-80 w-full object-cover">
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-zinc-900/30 border-y border-zinc-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black gold-text uppercase mb-10 italic">Da Evolução Mundial à Quadra 14</h2>
             
-            <div class="service-card p-8 rounded-3xl bg-zinc-900/50 text-center">
-                <i class="fa-solid fa-faucet-drip text-5xl gold-text mb-6"></i>
-                <h3 class="text-2xl font-bold mb-4 uppercase">LAVAGEM</h3>
-                <p class="text-zinc-400 mb-6 italic">Limpeza profunda que remove até a sujeira mais escondida.</p>
-                <button onclick="alert('LAVAGEM DO REI: Utilizamos shampoo de pH neutro e técnicas de dois baldes para evitar riscos. Inclui limpeza de caixas de roda, face das rodas e secagem técnica com microfibra premium.')" class="gold-text font-black uppercase text-sm border-b-2 border-yellow-600 pb-1">Ver Detalhes</button>
-            </div>
+            <div class="space-y-8 text-zinc-400 text-lg leading-relaxed italic">
+                <p>
+                    A história do lava-jato começou em 1914, em Detroit, com homens empurrando carros manualmente por etapas de limpeza. O mundo evoluiu, a tecnologia automotiva avançou e a lavagem deixou de ser apenas "tirar o barro" para se tornar uma ciência de preservação.
+                </p>
 
-            <div class="service-card p-8 rounded-3xl bg-zinc-900/50 text-center">
-                <i class="fa-solid fa-sparkles text-5xl gold-text mb-6"></i>
-                <h3 class="text-2xl font-bold mb-4 uppercase">ESTÉTICA</h3>
-                <p class="text-zinc-400 mb-6 italic">Cuidado interno e externo para o carro parecer zero km.</p>
-                <button onclick="alert('ESTÉTICA AUTOMOTIVA: Limpeza detalhada do interior, higienização de bancos, renovação de plásticos com proteção UV e aplicação de cera de carnaúba para um toque aveludado.')" class="gold-text font-black uppercase text-sm border-b-2 border-yellow-600 pb-1">Ver Detalhes</button>
-            </div>
+                <div class="bg-black p-8 border-l-4 border-yellow-600 rounded-r-2xl shadow-xl">
+                    <p class="text-white font-bold text-xl mb-4">A Nossa Missão em Sobradinho</p>
+                    <p>
+                        A mudança para a **Quadra 14** foi uma decisão estratégica para levar o padrão de luxo ao centro geográfico de Sobradinho. Entendemos que o coração do bairro precisava de um serviço que respeitasse o tempo do cliente.
+                    </p>
+                </div>
 
-            <div class="service-card p-8 rounded-3xl bg-zinc-900/50 text-center">
-                <i class="fa-solid fa-gem text-5xl gold-text mb-6"></i>
-                <h3 class="text-2xl font-bold mb-4 uppercase">POLIMENTO</h3>
-                <p class="text-zinc-400 mb-6 italic">O espelhamento que seu carro merece para brilhar no sol.</p>
-                <button onclick="alert('POLIMENTO TÉCNICO: Remoção de micro-riscos, oxidação e manchas na pintura. Utilizamos compostos de alta tecnologia para devolver o brilho espelhado e a profundidade da cor.')" class="gold-text font-black uppercase text-sm border-b-2 border-yellow-600 pb-1">Ver Detalhes</button>
+                <p>
+                    Ao nos estabelecermos **atrás do Sobradinho Shopping e próximos às principais escolas**, o Lava Jato do Rei transformou a espera exaustiva em conveniência. Hoje, você deixa seu veículo no centro de tudo e, enquanto resolve sua vida, nós aplicamos décadas de evolução em estética automotiva para garantir que seu carro saia majestoso.
+                </p>
             </div>
-
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-zinc-950 border-y border-zinc-900">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-black gold-text uppercase mb-8 italic">Tradição na Quadra 14</h2>
-            <p class="text-zinc-400 text-xl italic leading-relaxed">
-                Estamos localizados estrategicamente **atrás do Sobradinho Shopping e ao lado das principais escolas**. 
-                Nossa missão é facilitar sua vida: enquanto você cuida da sua rotina no centro do bairro, 
-                nós preparamos o seu carro para brilhar como se tivesse acabado de sair da fábrica.
-            </p>
+    <section class="py-24 px-6 text-center space-y-12">
+        <div>
+            <h3 class="text-2xl font-black gold-text uppercase mb-6 italic">Veja os Resultados</h3>
+            <a href="https://www.instagram.com/lavajatodurei/" target="_blank" class="gold-bg text-black px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:scale-110 transition inline-block text-xl">
+                Instagram Oficial
+            </a>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-black gold-text uppercase mb-6 italic">Agende o Trono</h3>
+            <a href="https://wa.me/5561981704587" target="_blank" class="border-2 border-yellow-600 text-yellow-600 px-12 py-4 rounded-full font-black uppercase hover:bg-yellow-600 hover:text-black transition inline-block">
+                Falar com o Rei
+            </a>
         </div>
     </section>
 
-    <section class="py-24 px-6 text-center">
-        <h2 class="text-4xl font-black mb-12 uppercase italic gold-text">RESULTADOS</h2>
-        <a href="https://www.instagram.com/lavajatodurei/" target="_blank" class="gold-bg text-black px-12 py-5 rounded-2xl font-black uppercase tracking-widest hover:scale-110 transition inline-block text-xl">
-            VER INSTAGRAM @LAVAJATODUREI
-        </a>
-    </section>
-
-    <footer class="py-10 text-center border-t border-zinc-900">
-        <p class="text-zinc-600 font-bold uppercase tracking-widest text-[10px]">Quadra 14 - Sobradinho DF</p>
+    <footer class="py-10 text-center opacity-30">
+        <p class="text-[10px] font-bold uppercase tracking-[10px]">Quadra 14 | Sobradinho DF</p>
     </footer>
 
     <a href="https://wa.me/5561981704587" class="fixed bottom-6 right-6 gold-bg text-black p-5 rounded-full shadow-2xl z-50">
