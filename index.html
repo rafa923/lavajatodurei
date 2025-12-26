@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lava Jato do Rei | Brilho Real</title>
+    <title>Lava Jato do Rei | Oficial</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -11,40 +11,28 @@
         
         body { 
             font-family: 'Inter', sans-serif; 
-            background-color: #000; 
+            background-color: #050505; 
             color: #fff; 
-            position: relative;
             overflow-x: hidden;
         }
 
-        /* FUNDO COM COROA E MANGUEIRA */
-        .bg-elements {
+        /* FUNDO COM IMAGEM FIXA PARA FORÇAR A MUDANÇA */
+        .fundo-rei {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
+            background-image: url('https://www.transparenttextures.com/patterns/black-linen.png'); /* textura de luxo */
+            opacity: 0.5;
+        }
+
+        .icon-floating {
+            position: fixed;
+            z-index: -1;
+            color: rgba(191, 149, 63, 0.15); /* Dourado bem suave */
             pointer-events: none;
-            opacity: 0.15; /* Deixa suave para não atrapalhar o texto */
-        }
-
-        .crown-bg {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 400px;
-            color: #bf953f;
-        }
-
-        .hose-bg {
-            position: absolute;
-            bottom: 10%;
-            right: -5%;
-            font-size: 300px;
-            color: #bf953f;
-            transform: rotate(-45deg);
         }
 
         .gold-text { color: #bf953f; }
@@ -52,63 +40,54 @@
         
         .bw-photo { 
             filter: grayscale(100%); 
-            transition: all 0.6s ease; 
-            cursor: pointer; 
-            object-fit: cover;
+            transition: all 0.5s ease; 
         }
-        .bw-photo:hover { filter: grayscale(0%); transform: scale(1.03); }
+        .bw-photo:hover { filter: grayscale(0%); transform: scale(1.02); }
     </style>
 </head>
 <body>
 
-    <div class="bg-elements">
-        <i class="fa-solid fa-crown crown-bg"></i>
-        <i class="fa-solid fa-shower hose-bg"></i>
-    </div>
+    <div class="fundo-rei"></div>
+    
+    <i class="fa-solid fa-crown icon-floating text-[500px] top-10 left-1/2 -translate-x-1/2"></i>
+    <i class="fa-solid fa-hose icon-floating text-[400px] bottom-0 -right-20 rotate-45"></i>
 
-    <nav class="p-6 border-b border-zinc-900 flex justify-between items-center bg-black/90 sticky top-0 z-50">
-        <div class="font-black italic text-xl uppercase tracking-tighter">👑 LAVA JATO <span class="gold-text">DO REI</span></div>
-        <a href="https://wa.me/5561981704587" class="gold-bg text-black px-6 py-2 rounded-full font-black uppercase text-xs">Falar com o Rei</a>
+    <nav class="p-6 border-b border-zinc-800 flex justify-between items-center bg-black/90 sticky top-0 z-50">
+        <div class="font-black italic text-xl uppercase">👑 LAVA JATO <span class="gold-text">DO REI</span></div>
+        <a href="https://wa.me/5561981704587" class="gold-bg text-black px-6 py-2 rounded-full font-black uppercase text-xs">Agendar Agora</a>
     </nav>
 
-    <header class="py-20 px-6 text-center">
-        <h1 class="text-6xl md:text-8xl font-black uppercase italic mb-4 leading-tight">BRILHO <span class="gold-text">DO REI</span></h1>
-        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold">Aqui seu carro sai <span class="gold-text">LIMPO</span> e você sai um REI!</p>
+    <header class="py-24 px-6 text-center">
+        <h1 class="text-7xl md:text-9xl font-black uppercase italic mb-6 tracking-tighter">BRILHO <span class="gold-text text-shadow-xl">DO REI</span></h1>
+        <p class="text-zinc-400 text-xl italic uppercase tracking-widest">Quadra 14 - Onde seu carro vira Realeza</p>
     </header>
 
     <section class="py-12 px-6 max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <img src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-64 w-full shadow-2xl border border-zinc-800">
-            <img src="https://images.pexels.com/photos/372810/pexels-photo-372810.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-64 w-full shadow-2xl border border-zinc-800">
-            <img src="https://images.pexels.com/photos/979503/pexels-photo-979503.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-64 w-full shadow-2xl border border-zinc-800">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <img src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-80 w-full object-cover border-2 border-zinc-800">
+            <img src="https://images.pexels.com/photos/372810/pexels-photo-372810.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-80 w-full object-cover border-2 border-zinc-800">
+            <img src="https://images.pexels.com/photos/979503/pexels-photo-979503.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-80 w-full object-cover border-2 border-zinc-800">
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-black/60 border-y border-zinc-900 backdrop-blur-sm">
-        <div class="max-w-4xl mx-auto space-y-12">
-            <h2 class="text-3xl font-black gold-text uppercase mb-10 italic text-center">Nossa Trajetória</h2>
-            <div class="space-y-10 text-zinc-400 leading-relaxed text-lg italic text-center">
-                <p>Desde 1914 em Detroit até a modernidade da estética automotiva atual, a lavagem evoluiu para uma ciência de preservação e brilho extremo.</p>
-                <div class="bg-zinc-900/80 p-8 rounded-3xl border border-yellow-900/30">
-                    <h3 class="gold-text font-black text-xl mb-4 uppercase">Quadra 14 - Sobradinho</h3>
-                    <p class="text-zinc-300 font-bold">Atrás do Shopping e perto das escolas: unimos a história mundial ao seu conforto diário.</p>
-                </div>
+    <section class="py-20 px-6">
+        <div class="max-w-3xl mx-auto bg-zinc-900/50 p-10 rounded-[40px] border border-zinc-800 backdrop-blur-md">
+            <h2 class="text-3xl font-black gold-text uppercase mb-8 italic text-center">100 Anos de História</h2>
+            <div class="space-y-6 text-zinc-300 text-lg leading-relaxed italic">
+                <p>Dos métodos manuais de 1914 à alta tecnologia de hoje. O Lava Jato do Rei traz essa evolução para a **Quadra 14 de Sobradinho**.</p>
+                <p class="text-white font-bold">Localização Premium: Atrás do Shopping e ao lado das escolas.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-6 text-center">
-        <a href="https://www.instagram.com/lavajatodurei/" target="_blank" class="hover:scale-105 transition-all inline-block">
-            <i class="fa-brands fa-instagram text-7xl gold-text mb-4"></i>
-            <h2 class="text-7xl md:text-9xl font-black uppercase italic gold-text tracking-tighter">RESULTADOS</h2>
+    <section class="py-32 px-6 text-center">
+        <a href="https://www.instagram.com/lavajatodurei/" target="_blank" class="group">
+            <h2 class="text-7xl md:text-[150px] font-black uppercase italic gold-text leading-none transition-all group-hover:scale-105">RESULTADOS</h2>
+            <p class="text-zinc-500 tracking-[15px] uppercase text-sm mt-4">Clique e siga @lavajatodurei</p>
         </a>
     </section>
 
-    <footer class="py-10 text-center opacity-30">
-        <p class="text-[10px] font-bold uppercase tracking-[10px]">Sobradinho DF | Quadra 14</p>
-    </footer>
-
-    <a href="https://wa.me/5561981704587" class="fixed bottom-6 right-6 gold-bg text-black p-5 rounded-full shadow-2xl z-50">
+    <a href="https://wa.me/5561981704587" class="fixed bottom-10 right-10 gold-bg text-black p-6 rounded-full shadow-[0_0_50px_rgba(191,149,63,0.4)] z-50 hover:scale-110 transition">
         <i class="fa-brands fa-whatsapp text-4xl"></i>
     </a>
 
