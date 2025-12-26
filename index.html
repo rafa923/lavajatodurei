@@ -15,36 +15,33 @@
         .foto-carro:hover { filter: grayscale(0%); transform: scale(1.02); }
         .marca-dagua { position: fixed; z-index: -1; color: rgba(191, 149, 63, 0.08); pointer-events: none; }
         
-        /* BOTÃO WHATSAPP DINÂMICO */
+        .aba-servico.ativa {
+            border-color: #bf953f;
+            color: #bf953f;
+            background: rgba(191, 149, 63, 0.1);
+        }
+        .conteudo-servico { display: none; }
+        .conteudo-servico.ativo { display: block; animation: fadeIn 0.6s ease-out; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         .btn-whatsapp {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
+            position: fixed; bottom: 30px; right: 30px;
             background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c);
-            color: #000;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 35px;
-            box-shadow: 0 0 20px rgba(191, 149, 63, 0.4);
-            z-index: 100;
-            transition: all 0.4s ease;
+            color: #000; width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 35px; box-shadow: 0 0 20px rgba(191, 149, 63, 0.4);
+            z-index: 100; transition: all 0.4s ease;
         }
-        .btn-whatsapp:hover {
-            background: #25D366; /* Verde WhatsApp */
-            color: #fff;
-            transform: scale(1.1) rotate(10deg);
-            box-shadow: 0 0 30px rgba(37, 211, 102, 0.6);
-        }
+        .btn-whatsapp:hover { background: #25D366; color: #fff; transform: scale(1.1) rotate(10deg); }
     </style>
 </head>
 <body>
 
     <i class="fa-solid fa-crown marca-dagua text-[500px] top-10 left-1/2 -translate-x-1/2"></i>
-    <i class="fa-solid fa-hose-reels marca-dagua text-[300px] bottom-10 right-0 rotate-45"></i>
 
     <nav class="p-6 border-b border-zinc-900 flex justify-between items-center bg-black/95 sticky top-0 z-50">
         <div class="font-black italic text-xl uppercase tracking-tighter">👑 LAVA JATO <span class="texto-ouro">DO REI</span></div>
@@ -53,24 +50,74 @@
 
     <header class="py-20 px-6 text-center">
         <h1 class="text-6xl md:text-8xl font-black uppercase italic mb-4 leading-tight">BRILHO <span class="texto-ouro">DO REI</span></h1>
-        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold mb-8">Aqui seu carro sai LIMPO e você sai um REI!</p>
+        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold mb-8">O tratamento que seu carro merece na Quadra 14</p>
         <a href="https://wa.me/5561981704587" class="fundo-ouro text-black px-10 py-4 rounded-full font-black uppercase text-lg shadow-2xl hover:scale-110 transition inline-block">Falar com o Rei</a>
     </header>
 
-    <section class="py-12 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-        <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=800&q=80" class="foto-carro rounded-3xl h-64 w-full shadow-2xl border border-zinc-800">
-        <img src="https://images.pexels.com/photos/4489734/pexels-photo-4489734.jpeg?auto=compress&cs=tinysrgb&w=800" class="foto-carro rounded-3xl h-64 w-full shadow-2xl border border-zinc-800">
-        <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800&q=80" class="foto-carro rounded-3xl h-64 w-full shadow-2xl border border-zinc-800">
-    </section>
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="bg-zinc-900/40 p-8 rounded-[40px] border border-zinc-800 backdrop-blur-sm mb-12">
+            <h2 class="text-3xl font-black uppercase italic mb-6 text-center texto-ouro">A Estratégia da Quadra 14</h2>
+            <p class="text-zinc-400 text-center italic leading-relaxed max-w-3xl mx-auto">
+                No coração de Sobradinho, a Quadra 14 é o ponto perfeito. Enquanto cuidamos do seu carro com excelência real, você está a passos do Shopping, das melhores escolas e da vibração da cidade. Praticidade para quem não tem tempo a perder.
+            </p>
+        </div>
 
-    <section class="py-20 px-6 max-w-5xl mx-auto">
-        <div class="bg-zinc-900/60 p-10 md:p-16 rounded-[50px] border border-zinc-800 backdrop-blur-md shadow-2xl">
-            <h2 class="text-4xl md:text-5xl font-black texto-ouro uppercase italic mb-8 text-center leading-tight">Quadra 14: O Coração de Sobradinho</h2>
-            
-            <div class="space-y-6 text-zinc-300 text-lg md:text-xl leading-relaxed text-justify italic">
-                <p>Escolhemos a <span class="texto-ouro font-bold">Quadra 14</span> por um motivo estratégico e fundamental: ela é, sem dúvida, o <span class="text-white font-bold">centro pulsante de Sobradinho</span>.</p>
-                <p>Estamos situados a poucos metros das <span class="text-white font-bold">principais escolas da região</span>, facilitando a rotina de quem precisa deixar os filhos e quer aproveitar o tempo para cuidar do carro. Além disso, estamos colados ao <span class="text-white font-bold">Sobradinho Shopping</span> e à famosa <span class="text-white font-bold">quadra de futebol da 14</span>.</p>
-                <p>Criamos o <span class="texto-ouro font-bold">Lava Jato do Rei</span> aqui exatamente por isso: por ser <span class="text-white font-bold">perto de tudo</span>! Deixe o seu carro com quem entende no lugar mais acessível e central da cidade.</p>
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+            <button onclick="mudarServico('vitrificacao')" id="btn-vitrificacao" class="aba-servico ativa border border-zinc-800 px-6 py-3 rounded-full font-bold uppercase text-[10px] tracking-widest transition-all">Vitrificação</button>
+            <button onclick="mudarServico('polimento')" id="btn-polimento" class="aba-servico border border-zinc-800 px-6 py-3 rounded-full font-bold uppercase text-[10px] tracking-widest transition-all">Polimento Farol</button>
+            <button onclick="mudarServico('higienizacao')" id="btn-higienizacao" class="aba-servico border border-zinc-800 px-6 py-3 rounded-full font-bold uppercase text-[10px] tracking-widest transition-all">Higienização</button>
+            <button onclick="mudarServico('lavagem')" id="btn-lavagem" class="aba-servico border border-zinc-800 px-6 py-3 rounded-full font-bold uppercase text-[10px] tracking-widest transition-all">Lavagem Americana</button>
+        </div>
+
+        <div id="vitrificacao" class="conteudo-servico ativo">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-4xl font-black texto-ouro uppercase italic">Vitrificação Real</h3>
+                    <p class="text-zinc-400 text-lg italic">Proteção extrema e brilho profundo. Usamos o que há de melhor para selar a pintura do seu veículo.</p>
+                    <div class="aspect-video rounded-3xl overflow-hidden border border-zinc-800">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/S_vGTo3P8E4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro h-full">
+            </div>
+        </div>
+
+        <div id="polimento" class="conteudo-servico">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-4xl font-black texto-ouro uppercase italic">Polimento de Farol</h3>
+                    <p class="text-zinc-400 text-lg italic">Recupere a visão noturna e a estética do seu carro. Devolvemos a transparência original do acrílico.</p>
+                    <div class="aspect-video rounded-3xl overflow-hidden border border-zinc-800">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/S_vGTo3P8E4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1626947346165-4c2288dadc2a?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro h-full">
+            </div>
+        </div>
+
+        <div id="higienizacao" class="conteudo-servico">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-4xl font-black texto-ouro uppercase italic">Higienização</h3>
+                    <p class="text-zinc-400 text-lg italic">Saúde e conforto. Limpeza profunda de estofados com extração de impurezas e odores.</p>
+                    <div class="aspect-video rounded-3xl overflow-hidden border border-zinc-800">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/S_vGTo3P8E4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro h-full">
+            </div>
+        </div>
+
+        <div id="lavagem" class="conteudo-servico">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-4xl font-black texto-ouro uppercase italic">Lavagem Americana</h3>
+                    <p class="text-zinc-400 text-lg italic">O cuidado minucioso. Snow foam e técnicas de detalhamento para um carro impecável.</p>
+                    <div class="aspect-video rounded-3xl overflow-hidden border border-zinc-800">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/S_vGTo3P8E4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro h-full">
             </div>
         </div>
     </section>
@@ -90,5 +137,13 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
+    <script>
+        function mudarServico(id) {
+            document.querySelectorAll('.conteudo-servico').forEach(el => el.classList.remove('ativo'));
+            document.querySelectorAll('.aba-servico').forEach(el => el.classList.remove('ativa'));
+            document.getElementById(id).classList.add('ativo');
+            document.getElementById('btn-' + id).classList.add('ativa');
+        }
+    </script>
 </body>
 </html>
