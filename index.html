@@ -36,7 +36,6 @@
             font-size: 35px; box-shadow: 0 0 20px rgba(191, 149, 63, 0.4);
             z-index: 100; transition: all 0.4s ease;
         }
-        .btn-whatsapp:hover { background: #25D366; color: #fff; transform: scale(1.1) rotate(10deg); }
     </style>
 </head>
 <body>
@@ -50,18 +49,20 @@
 
     <header class="py-20 px-6 text-center">
         <h1 class="text-6xl md:text-8xl font-black uppercase italic mb-4 leading-tight">BRILHO <span class="texto-ouro">DO REI</span></h1>
-        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold mb-8">O tratamento que seu carro merece na Quadra 14</p>
+        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold mb-8">O melhor de Sobradinho na Quadra 14</p>
         <a href="https://wa.me/5561981704587" class="fundo-ouro text-black px-10 py-4 rounded-full font-black uppercase text-lg shadow-2xl hover:scale-110 transition inline-block">Falar com o Rei</a>
     </header>
 
-    <section class="py-12 px-6 max-w-6xl mx-auto">
-        <div class="bg-zinc-900/40 p-8 rounded-[40px] border border-zinc-800 backdrop-blur-sm mb-12">
-            <h2 class="text-3xl font-black uppercase italic mb-6 text-center texto-ouro">A Estratégia da Quadra 14</h2>
-            <p class="text-zinc-400 text-center italic leading-relaxed max-w-3xl mx-auto">
-                No coração de Sobradinho, a Quadra 14 é o ponto perfeito. Enquanto cuidamos do seu carro com excelência real, você está a passos do Shopping, das melhores escolas e da vibração da cidade. Praticidade para quem não tem tempo a perder.
+    <section class="py-12 px-6 max-w-4xl mx-auto">
+        <div class="bg-zinc-900/40 p-10 rounded-[40px] border border-zinc-800 backdrop-blur-sm text-center">
+            <h2 class="text-3xl font-black uppercase italic mb-6 texto-ouro">O Coração da Quadra 14</h2>
+            <p class="text-zinc-300 italic leading-relaxed">
+                Estamos estrategicamente localizados na Quadra 14 de Sobradinho. Um ponto central, próximo ao Shopping e às principais escolas. Enquanto cuidamos do seu carro com padrão real, você aproveita o que a cidade tem de melhor ao redor.
             </p>
         </div>
+    </section>
 
+    <section class="py-12 px-6 max-w-6xl mx-auto">
         <div class="flex flex-wrap justify-center gap-3 mb-12">
             <button onclick="mudarServico('vitrificacao')" id="btn-vitrificacao" class="aba-servico ativa border border-zinc-800 px-6 py-3 rounded-full font-bold uppercase text-[10px] tracking-widest transition-all">Vitrificação</button>
             <button onclick="mudarServico('polimento')" id="btn-polimento" class="aba-servico border border-zinc-800 px-6 py-3 rounded-full font-bold uppercase text-[10px] tracking-widest transition-all">Polimento Farol</button>
@@ -73,12 +74,9 @@
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Vitrificação Real</h3>
-                    <p class="text-zinc-400 text-lg italic">Proteção extrema e brilho profundo. Usamos o que há de melhor para selar a pintura do seu veículo.</p>
-                    <div class="aspect-video rounded-3xl overflow-hidden border border-zinc-800">
-                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/S_vGTo3P8E4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <p class="text-zinc-400 text-lg italic">Proteção nanotecnológica que cria uma camada de vidro sobre a pintura, garantindo brilho e repelência por muito mais tempo.</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro h-full">
+                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro w-full h-80">
             </div>
         </div>
 
@@ -86,12 +84,9 @@
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Polimento de Farol</h3>
-                    <p class="text-zinc-400 text-lg italic">Recupere a visão noturna e a estética do seu carro. Devolvemos a transparência original do acrílico.</p>
-                    <div class="aspect-video rounded-3xl overflow-hidden border border-zinc-800">
-                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/S_vGTo3P8E4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <p class="text-zinc-400 text-lg italic">Faróis novos de novo. Removemos o amarelado e devolvemos a total transparência e segurança para sua direção.</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1626947346165-4c2288dadc2a?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro h-full">
+                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro w-full h-80" alt="Farol de carro">
             </div>
         </div>
 
@@ -99,12 +94,9 @@
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Higienização</h3>
-                    <p class="text-zinc-400 text-lg italic">Saúde e conforto. Limpeza profunda de estofados com extração de impurezas e odores.</p>
-                    <div class="aspect-video rounded-3xl overflow-hidden border border-zinc-800">
-                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/S_vGTo3P8E4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <p class="text-zinc-400 text-lg italic">Limpeza técnica do interior. Bancos, teto e painel tratados com produtos que eliminam bactérias e renovam o ambiente.</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro h-full">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro w-full h-80">
             </div>
         </div>
 
@@ -112,12 +104,9 @@
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Lavagem Americana</h3>
-                    <p class="text-zinc-400 text-lg italic">O cuidado minucioso. Snow foam e técnicas de detalhamento para um carro impecável.</p>
-                    <div class="aspect-video rounded-3xl overflow-hidden border border-zinc-800">
-                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/S_vGTo3P8E4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <p class="text-zinc-400 text-lg italic">O auge do detalhamento automotivo. Limpeza externa profunda usando as melhores ceras e shampoos do mercado.</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro h-full">
+                <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro w-full h-80">
             </div>
         </div>
     </section>
