@@ -3,58 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lava Jato do Rei | Resultados e História</title>
+    <title>Lava Jato do Rei</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; margin: 0; }
-        .ouro { color: #bf953f; }
-        .bg-ouro { background: linear-gradient(135deg, #bf953f, #aa771c); }
-        .btn-insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-text { color: #bf953f; }
+        .gold-bg { background: linear-gradient(135deg, #bf953f, #aa771c); }
     </style>
 </head>
-<body>
+<body class="bg-black">
 
-    <nav class="p-4 border-b border-zinc-800 text-center bg-black">
-        <p class="text-[10px] uppercase tracking-[3px] text-yellow-600 font-bold">Desde o início na Quadra 14</p>
+    <nav class="p-6 border-b border-zinc-800 flex justify-between items-center">
+        <h1 class="font-black italic text-2xl uppercase">👑 LAVA JATO <span class="gold-text">DO REI</span></h1>
+        <a href="https://wa.me/5561981704587" class="gold-bg text-black px-6 py-2 rounded-full font-bold uppercase text-xs">Agendar</a>
     </nav>
 
-    <header class="py-12 px-4 text-center">
-        <h1 class="text-4xl md:text-6xl font-black uppercase italic italic">LAVA JATO <span class="ouro">DO REI</span></h1>
-        <p class="text-zinc-500 mt-2 italic">O brilho que seu carro merece, atrás do Sobradinho Shopping.</p>
+    <header class="hero-bg py-32 px-6 text-center">
+        <h2 class="text-6xl md:text-8xl font-black uppercase italic mb-6">BRILHO DE <br><span class="gold-text">REALEZA</span></h2>
+        <p class="text-zinc-300 text-xl max-w-2xl mx-auto italic">O melhor tratamento automotivo de Sobradinho. Qualidade absoluta em cada detalhe.</p>
     </header>
 
-    <section class="py-12 px-6 max-w-3xl mx-auto border-t border-zinc-900">
-        <h2 class="text-xl font-black ouro uppercase mb-6 italic">Nossa História e o Surgimento</h2>
-        <div class="space-y-6 text-zinc-400 text-base leading-relaxed">
-            <p>
-                A história do **Lava Jato do Rei** se funde com a evolução do cuidado automotivo em Sobradinho. Antigamente, lavar um carro era um processo simples, mas nós entendemos que o morador da nossa cidade precisava de algo a mais: **estética técnica**.
-            </p>
-            <p>
-                Nosso nascimento na **Quadra 14** foi estratégico. Escolhemos o ponto atrás do Sobradinho Shopping para ser o centro da excelência. Desde o primeiro dia, focamos em processos que protegem a pintura e renovam o interior, trazendo a tecnologia de produtos premium para dentro da nossa comunidade.
-            </p>
-            <p>
-                Hoje, somos referência porque nunca esquecemos nossa origem. Cada carro que entra na nossa unidade é tratado com a mesma paixão do primeiro dia, garantindo que o nome "Rei" seja honrado em cada entrega.
-            </p>
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-black uppercase mb-12 italic">Resultados Absolutos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-zinc-800 rounded-2xl">
+                    <i class="fa-solid fa-droplet gold-text text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl mb-2">Lavagem Técnica</h4>
+                    <p class="text-zinc-500 text-sm italic">Cuidado minucioso com a pintura e acabamentos.</p>
+                </div>
+                <div class="p-8 border border-zinc-800 rounded-2xl">
+                    <i class="fa-solid fa-shield-halved gold-text text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl mb-2">Proteção</h4>
+                    <p class="text-zinc-500 text-sm italic">Ceras e selantes de alta performance.</p>
+                </div>
+                <div class="p-8 border border-zinc-800 rounded-2xl">
+                    <i class="fa-solid fa-wand-magic-sparkles gold-text text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl mb-2">Estética</h4>
+                    <p class="text-zinc-500 text-sm italic">O brilho que seu carro merece.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="py-12 px-6 bg-zinc-950 text-center border-y border-zinc-900">
-        <h2 class="text-2xl font-black uppercase mb-8 italic">Nossos <span class="ouro">Resultados</span></h2>
-        
-        <div class="max-w-sm mx-auto p-6 bg-zinc-900 rounded-3xl border border-zinc-800 shadow-2xl">
-            <i class="fa-brands fa-instagram text-5xl mb-4 text-white"></i>
-            <h3 class="font-bold mb-4">Veja o antes e depois no nosso Instagram oficial</h3>
-            
-            <a href="https://www.instagram.com/lavajatodurei/" target="_blank" class="btn-insta text-white block py-4 rounded-xl font-black uppercase tracking-widest hover:scale-105 transition shadow-lg">
-                Ver Resultados Agora
-            </a>
+    <footer class="py-12 border-t border-zinc-900 text-center">
+        <p class="text-zinc-600 font-bold uppercase tracking-widest text-xs mb-4 italic">Quadra 14 - Atrás do Sobradinho Shopping</p>
+        <div class="flex justify-center gap-6">
+            <a href="https://www.instagram.com/lavajatodurei/" class="text-2xl hover:text-yellow-600 transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/5561981704587" class="text-2xl hover:text-green-600 transition"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-    </section>
-
-    <footer class="py-10 text-center text-zinc-600">
-        <p class="text-[10px] uppercase tracking-[5px]">Sobradinho DF | Quadra 14</p>
     </footer>
 
     <a href="https://wa.me/5561981704587" class="fixed bottom-6 right-6 bg-green-600 p-4 rounded-full shadow-2xl z-50">
