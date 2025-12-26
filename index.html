@@ -15,32 +15,17 @@
         .foto-carro:hover { filter: grayscale(0%); transform: scale(1.02); }
         .marca-dagua { position: fixed; z-index: -1; color: rgba(191, 149, 63, 0.08); pointer-events: none; }
         
-        /* BOTÃO COM EFEITO DE COROA */
         .btn-rei {
-            position: relative;
-            transition: all 0.3s ease;
-            overflow: hidden;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            position: relative; transition: all 0.3s ease; overflow: hidden;
+            display: inline-flex; align-items: center; justify-content: center;
         }
         .btn-rei span { transition: all 0.3s ease; }
-        .btn-rei .coroa-hover {
-            position: absolute;
-            opacity: 0;
-            transform: translateY(20px);
-            font-size: 1.5rem;
-        }
+        .btn-rei .coroa-hover { position: absolute; opacity: 0; transform: translateY(20px); font-size: 1.5rem; }
         .btn-rei:hover span { opacity: 0; transform: translateY(-20px); }
         .btn-rei:hover .coroa-hover { opacity: 1; transform: translateY(0); }
 
-        /* EFEITO ROSA NO RESULTADOS */
-        .link-resultados:hover h2 {
-            color: #ff007f !important;
-            text-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
-        }
+        .link-resultados:hover h2 { color: #ff007f !important; text-shadow: 0 0 20px rgba(255, 0, 127, 0.4); }
 
-        /* WHATSAPP VERDE */
         .btn-whatsapp {
             position: fixed; bottom: 30px; right: 30px;
             background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c);
@@ -49,11 +34,7 @@
             font-size: 35px; box-shadow: 0 0 20px rgba(191, 149, 63, 0.4);
             z-index: 100; transition: all 0.4s ease;
         }
-        .btn-whatsapp:hover {
-            background: #25D366 !important;
-            color: #fff !important;
-            transform: scale(1.1) rotate(10deg);
-        }
+        .btn-whatsapp:hover { background: #25D366 !important; color: #fff !important; transform: scale(1.1) rotate(10deg); }
 
         .aba-servico.ativa { border-color: #bf953f; color: #bf953f; background: rgba(191, 149, 63, 0.1); }
         .conteudo-servico { display: none; }
@@ -75,7 +56,7 @@
 
     <header class="py-20 px-6 text-center">
         <h1 class="text-6xl md:text-8xl font-black uppercase italic mb-4 leading-tight">BRILHO <span class="texto-ouro">DU REI</span></h1>
-        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold mb-8">O melhor de Sobradinho na Quadra 14</p>
+        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold mb-8">O tratamento real na Quadra 14</p>
         <a href="https://wa.me/5561981704587" class="btn-rei fundo-ouro text-black px-10 py-4 rounded-full font-black uppercase text-lg shadow-2xl hover:scale-110 transition inline-flex">
             <span>Falar com u Rei</span>
             <div class="coroa-hover">👑</div>
@@ -118,41 +99,65 @@
 
         <div id="vitrificacao" class="conteudo-servico ativo">
             <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div class="space-y-6 text-center md:text-left">
+                <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Vitrificação Real</h3>
-                    <p class="text-zinc-400">Proteção nanotecnológica definitiva.</p>
+                    <p class="text-zinc-400 leading-relaxed italic">
+                        Aplicação de resina nanocerâmica que cria uma camada de vidro sobre a pintura. <br><br>
+                        • Proteção contra raios UV e fezes de aves.<br>
+                        • Hidrorrepelência extrema (a água escorre sozinha).<br>
+                        • Brilho profundo por até 3 anos.<br>
+                        • Facilita a limpeza semanal du veículo.
+                    </p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 foto-carro w-full h-80">
+                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 foto-carro w-full h-96">
             </div>
         </div>
 
         <div id="polimento" class="conteudo-servico">
             <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div class="space-y-6 text-center md:text-left">
-                    <h3 class="text-4xl font-black texto-ouro uppercase italic">Polimento Farol</h3>
-                    <p class="text-zinc-400">Remoção de amarelado e brilho original.</p>
+                <div class="space-y-6">
+                    <h3 class="text-4xl font-black texto-ouro uppercase italic">Polimento de Farol</h3>
+                    <p class="text-zinc-400 leading-relaxed italic">
+                        Recuperação total da lente du farol, eliminando aquele aspecto "velho" e amarelado.<br><br>
+                        • Lixamento técnico para remover oxidação.<br>
+                        • Polimento com compostos de alto brilho.<br>
+                        • Verniz protetor para evitar novo amarelamento.<br>
+                        • Melhora a visibilidade e segurança ao dirigir à noite.
+                    </p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 foto-carro w-full h-80">
+                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 foto-carro w-full h-96">
             </div>
         </div>
 
         <div id="higienizacao" class="conteudo-servico">
             <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div class="space-y-6 text-center md:text-left">
+                <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Higienização</h3>
-                    <p class="text-zinc-400">Limpeza profunda du interior.</p>
+                    <p class="text-zinc-400 leading-relaxed italic">
+                        Limpeza técnica profunda de todo u interior du carro.<br><br>
+                        • Aspiração detalhada de carpetes e frestas.<br>
+                        • Limpeza de bancos (couro ou tecido) com extratora.<br>
+                        • Higienização de teto, painel e forros de porta.<br>
+                        • Eliminação de fungos, bactérias e maus odores.
+                    </p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 foto-carro w-full h-80">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 foto-carro w-full h-96">
             </div>
         </div>
 
         <div id="lavagem" class="conteudo-servico">
             <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div class="space-y-6 text-center md:text-left">
+                <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Lavagem Americana</h3>
-                    <p class="text-zinc-400">Cuidado minucioso em cada detalhe.</p>
+                    <p class="text-zinc-400 leading-relaxed italic">
+                        U método mais seguro e detalhado de limpeza externa.<br><br>
+                        • Pré-lavagem com Snow Foam para soltar a sujeira.<br>
+                        • Lavagem com luva de microfibra (não risca).<br>
+                        • Limpeza técnica de caixas de roda e pneus.<br>
+                        • Acabamento com cera de carnaúba premium para brilho e proteção.
+                    </p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 foto-carro w-full h-80">
+                <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 foto-carro w-full h-96">
             </div>
         </div>
     </section>
