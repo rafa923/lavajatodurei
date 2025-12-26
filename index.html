@@ -3,81 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lava Jato do Rei | História e Estética</title>
+    <title>Lava Jato do Rei | Oficial</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #050505; color: #fff; overflow-x: hidden; }
-        .gold-text { color: #bf953f; }
-        .gold-bg { background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c); }
-        .bw-photo { filter: grayscale(100%); transition: all 0.5s ease; cursor: pointer; }
-        .bw-photo:hover { filter: grayscale(0%); transform: scale(1.02); }
-        .bg-icon { position: fixed; z-index: -1; color: rgba(191, 149, 63, 0.08); pointer-events: none; }
+        .texto-ouro { color: #bf953f; }
+        .fundo-ouro { background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c); }
+        .foto-carro { filter: grayscale(100%); transition: 0.5s; cursor: pointer; object-fit: cover; border: 1px solid #222; }
+        .foto-carro:hover { filter: grayscale(0%); transform: scale(1.02); border-color: #bf953f; }
+        .marca-dagua { position: fixed; z-index: -1; color: rgba(191, 149, 63, 0.07); pointer-events: none; }
     </style>
 </head>
 <body>
 
-    <i class="fa-solid fa-crown bg-icon text-[500px] top-20 left-1/2 -translate-x-1/2"></i>
-    <i class="fa-solid fa-hose bg-icon text-[300px] bottom-10 -right-20 rotate-45"></i>
+    <i class="fa-solid fa-crown marca-dagua text-[500px] top-10 left-1/2 -translate-x-1/2"></i>
+    <i class="fa-solid fa-hose-reels marca-dagua text-[300px] bottom-10 right-0 rotate-45"></i>
 
     <nav class="p-6 border-b border-zinc-900 flex justify-between items-center bg-black/95 sticky top-0 z-50">
-        <div class="font-black italic text-xl uppercase tracking-tighter">👑 LAVA JATO <span class="gold-text">DO REI</span></div>
-        <a href="https://wa.me/5561981704587" class="gold-bg text-black px-6 py-2 rounded-full font-black uppercase text-xs hover:scale-105 transition">Falar com o Rei</a>
+        <div class="font-black italic text-xl uppercase tracking-tighter">👑 LAVA JATO <span class="texto-ouro">DO REI</span></div>
+        <a href="https://wa.me/5561981704587" class="fundo-ouro text-black px-6 py-2 rounded-full font-black uppercase text-xs">Falar com o Rei</a>
     </nav>
 
     <header class="py-20 px-6 text-center">
-        <h1 class="text-6xl md:text-8xl font-black uppercase italic mb-4 leading-tight">BRILHO <span class="gold-text">DO REI</span></h1>
-        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold mb-8 italic">Aqui seu carro sai LIMPO e você sai um REI!</p>
-        <a href="https://wa.me/5561981704587" class="gold-bg text-black px-10 py-4 rounded-full font-black uppercase text-lg shadow-2xl hover:scale-110 transition inline-block">Falar com o Rei</a>
+        <h1 class="text-6xl md:text-8xl font-black uppercase italic mb-4 leading-tight">BRILHO <span class="texto-ouro">DO REI</span></h1>
+        <p class="text-zinc-400 text-lg italic uppercase tracking-widest font-bold mb-8">Aqui seu carro sai LIMPO e você sai um REI!</p>
+        <a href="https://wa.me/5561981704587" class="fundo-ouro text-black px-10 py-4 rounded-full font-black uppercase text-lg shadow-2xl hover:scale-110 transition inline-block">Falar com o Rei</a>
     </header>
 
-    <section class="py-12 px-6 max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <img src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-64 w-full object-cover border border-zinc-800">
-            <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-64 w-full object-cover border border-zinc-800">
-            <img src="https://images.pexels.com/photos/1200497/pexels-photo-1200497.jpeg?auto=compress&cs=tinysrgb&w=800" class="bw-photo rounded-3xl h-64 w-full object-cover border border-zinc-800">
-        </div>
+    <section class="py-12 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?auto=format&fit=crop&w=800&q=80" class="foto-carro rounded-3xl h-64 w-full shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1605610849440-e4a5e1e3b82d?auto=format&fit=crop&w=800&q=80" class="foto-carro rounded-3xl h-64 w-full shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800&q=80" class="foto-carro rounded-3xl h-64 w-full shadow-2xl">
     </section>
 
-    <section class="py-20 px-6 max-w-4xl mx-auto space-y-16">
-        
-        <div class="border-l-4 border-yellow-600 pl-6 space-y-4">
-            <h2 class="text-3xl font-black gold-text uppercase italic">A Jornada da Estética Automotiva</h2>
-            <p class="text-zinc-400 leading-relaxed italic">A história dos lava-jatos começa nos EUA em 1914 com métodos manuais e evolui para máquinas automáticas nos anos 60. Hoje, o serviço é uma arte de conveniência e tecnologia.</p>
+    <section class="py-20 px-6 max-w-4xl mx-auto space-y-12">
+        <div class="border-l-4 border-yellow-600 pl-6">
+            <h2 class="text-3xl font-black texto-ouro uppercase italic mb-4">A Evolução dos Lava-Jatos</h2>
+            <p class="text-zinc-400 italic">Começa nos EUA em 1914 com métodos manuais e evolui para máquinas automáticas nos anos 60, popularizando-se com inovações ecológicas e estética automotiva.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-10">
-            <div class="space-y-4">
-                <h3 class="text-white font-bold uppercase gold-text">Primeiros Passos (1914)</h3>
-                <p class="text-zinc-400 text-sm italic">O primeiro "lava-car" surgiu nos EUA utilizando baldes e sabão. Com o aumento dos carros, a demanda impulsionou a inovação.</p>
+        <div class="grid md:grid-cols-2 gap-8 text-zinc-300">
+            <div class="bg-zinc-900/40 p-6 rounded-2xl">
+                <h4 class="texto-ouro font-bold uppercase mb-2">Primeiros Passos (1914)</h4>
+                <p class="text-sm italic">Pioneirismo com baldes e sabão. Com o aumento dos carros, a demanda cresceu, impulsionando a inovação.</p>
             </div>
-            <div class="space-y-4">
-                <h3 class="text-white font-bold uppercase gold-text">A Revolução (Anos 1960)</h3>
-                <p class="text-zinc-400 text-sm italic">Chegada dos sistemas mecanizados com túneis e escovas giratórias, transformando o lava-rápido em uma indústria global.</p>
+            <div class="bg-zinc-900/40 p-6 rounded-2xl">
+                <h4 class="texto-ouro font-bold uppercase mb-2">Anos 1960</h4>
+                <p class="text-sm italic">Chegada dos sistemas mecanizados, túneis e escovas giratórias, transformando o serviço em uma indústria global.</p>
             </div>
-            <div class="space-y-4">
-                <h3 class="text-white font-bold uppercase gold-text">Modernização e Sustentabilidade</h3>
-                <p class="text-zinc-400 text-sm italic">Surgiram tecnologias "sem contato" e lavagem a seco, focando na redução do impacto ambiental e na estética detalhada.</p>
+            <div class="bg-zinc-900/40 p-6 rounded-2xl">
+                <h4 class="texto-ouro font-bold uppercase mb-2">Modernização</h4>
+                <p class="text-sm italic">Equipamentos sem escovas e lavagem a seco, reduzindo o consumo de água e elevando o serviço à estética automotiva.</p>
             </div>
-            <div class="space-y-4">
-                <h3 class="text-white font-bold uppercase gold-text">Crescimento no Brasil</h3>
-                <p class="text-zinc-400 text-sm italic">Os lava-rápidos tornaram-se microempresas fundamentais, com foco em tratamento de efluentes e produtos biodegradáveis.</p>
+            <div class="bg-zinc-900/40 p-6 rounded-2xl">
+                <h4 class="texto-ouro font-bold uppercase mb-2">No Brasil</h4>
+                <p class="text-sm italic">Crescimento das microempresas focadas em sustentabilidade e reuso de água.</p>
             </div>
         </div>
 
-        <div class="bg-zinc-900/80 p-10 rounded-[40px] border border-zinc-800 text-center">
-            <h3 class="gold-text font-black text-2xl mb-4 uppercase italic">Chegada na Quadra 14</h3>
-            <p class="text-zinc-300 italic mb-4 text-lg">Localizados estrategicamente **atrás do Sobradinho Shopping e ao lado das principais escolas**.</p>
-            <p class="text-zinc-500 italic">O Lava Jato do Rei traz toda essa evolução histórica para o coração de Sobradinho, unindo tradição técnica e conveniência máxima.</p>
+        <div class="bg-zinc-900/80 p-8 rounded-[40px] border border-zinc-800 text-center">
+            <h3 class="texto-ouro font-black text-2xl mb-4 uppercase italic">Chegada na Quadra 14</h3>
+            <p class="text-zinc-300 italic">Situados estrategicamente <strong>atrás do Sobradinho Shopping e ao lado das principais escolas</strong>. Unimos tradição técnica e conveniência máxima em Sobradinho.</p>
         </div>
-
     </section>
 
     <section class="py-24 px-6 text-center">
-        <a href="https://www.instagram.com/lavajatodurei/" target="_blank" class="hover:scale-105 transition-all inline-block">
-            <h2 class="text-7xl md:text-[120px] font-black uppercase italic gold-text tracking-tighter leading-none">RESULTADOS</h2>
-            <p class="text-zinc-500 mt-4 tracking-[10px] uppercase text-xs italic">Clique e confira nosso Instagram</p>
+        <a href="https://www.instagram.com/lavajatodurei/" target="_blank">
+            <h2 class="text-7xl md:text-[140px] font-black uppercase italic texto-ouro tracking-tighter leading-none hover:scale-105 transition-transform">RESULTADOS</h2>
+            <p class="text-zinc-500 mt-4 tracking-[10px] uppercase text-xs italic">Clique para ver nosso Instagram</p>
         </a>
     </section>
 
@@ -85,7 +80,7 @@
         <p class="text-[10px] font-bold uppercase tracking-[10px]">Sobradinho DF | Quadra 14</p>
     </footer>
 
-    <a href="https://wa.me/5561981704587" class="fixed bottom-6 right-6 gold-bg text-black p-5 rounded-full shadow-2xl z-50">
+    <a href="https://wa.me/5561981704587" class="fixed bottom-6 right-6 fundo-ouro text-black p-5 rounded-full shadow-2xl z-50">
         <i class="fa-brands fa-whatsapp text-4xl"></i>
     </a>
 
