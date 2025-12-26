@@ -28,6 +28,13 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* EFEITO ROSA NO RESULTADOS */
+        .link-resultados:hover h2 {
+            color: #ff007f !important;
+            text-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
+        }
+
+        /* WHATSAPP VERDE AO PASSAR O MOUSE */
         .btn-whatsapp {
             position: fixed; bottom: 30px; right: 30px;
             background: linear-gradient(135deg, #bf953f, #fcf6ba, #aa771c);
@@ -35,6 +42,12 @@
             display: flex; align-items: center; justify-content: center;
             font-size: 35px; box-shadow: 0 0 20px rgba(191, 149, 63, 0.4);
             z-index: 100; transition: all 0.4s ease;
+        }
+        .btn-whatsapp:hover {
+            background: #25D366 !important;
+            color: #fff !important;
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.5);
         }
     </style>
 </head>
@@ -95,7 +108,7 @@
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Vitrificação Real</h3>
-                    <p class="text-zinc-400 text-lg italic">Proteção nanotecnológica que cria uma camada de vidro sobre a pintura, garantindo brilho por muito mais tempo.</p>
+                    <p class="text-zinc-400 text-lg italic">Proteção nanotecnológica que cria uma camada de vidro sobre a pintura.</p>
                 </div>
                 <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro w-full h-80">
             </div>
@@ -125,7 +138,7 @@
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div class="space-y-6">
                     <h3 class="text-4xl font-black texto-ouro uppercase italic">Lavagem Americana</h3>
-                    <p class="text-zinc-400 text-lg italic">U auge du detalhamento. Limpeza profunda usando shampoos du mercado internacional.</p>
+                    <p class="text-zinc-400 text-lg italic">U auge du detalhamento. Limpeza profunda usando shampoos du mercado.</p>
                 </div>
                 <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800" class="rounded-[40px] border border-zinc-800 shadow-2xl foto-carro w-full h-80">
             </div>
@@ -133,8 +146,8 @@
     </section>
 
     <section class="py-24 px-6 text-center">
-        <a href="https://www.instagram.com/lavajatodurei/" target="_blank">
-            <h2 class="text-7xl md:text-[140px] font-black uppercase italic texto-ouro tracking-tighter hover:scale-105 transition-transform">RESULTADOS</h2>
+        <a href="https://www.instagram.com/lavajatodurei/" target="_blank" class="link-resultados">
+            <h2 class="text-7xl md:text-[140px] font-black uppercase italic texto-ouro tracking-tighter transition-all duration-300">RESULTADOS</h2>
             <p class="text-zinc-500 mt-4 tracking-[10px] uppercase text-xs italic">Siga nu Instagram</p>
         </a>
     </section>
